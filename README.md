@@ -16,4 +16,4 @@ In my version of the simulation, you can either press on the cells you wish to m
 randomize some living cells from the 'add random cells' button
 
 ### Here's a picture of the simulation
-![](src/image/GameOfLife.png)
+![](src/Image/GameOfLife.png)

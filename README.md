@@ -1,4 +1,4 @@
-#GameOfLife
+# GameOfLife
 
 In this project, i've made a simulation of the game of life principles.\
 Each square represents a cell which can either be dead or alive. \
@@ -15,5 +15,5 @@ Here are som basic rules:
 In my version of the simulation, you can either press on the cells you wish to make live, or you can\
 randomize some living cells from the 'add random cells' button
 
-###Here's a picture of the simulation
+### Here's a picture of the simulation
 ![](src/image/GameOfLife.png)

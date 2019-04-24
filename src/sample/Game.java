@@ -9,6 +9,7 @@ public class Game {
 
     //Method for creating new game. Makes a cell for every rectangle to match my gridpane
     public Game() {
+
         for (int i = 0; i < BOARDSIZE_X; i++) {
             for (int j = 0; j < BOARDSIZE_Y; j++) {
                 gameBoard[i][j] = new Cell();
@@ -32,6 +33,7 @@ public class Game {
     }
 
     public void update(){
+
         neighboursCounter(gameBoard);
 
         for (int i = 0; i < BOARDSIZE_X; i++) {
@@ -127,11 +129,23 @@ public class Game {
     private boolean CellWithinBoard(int gridX, int gridY) {
 
         if((gridX < 0) || (gridY <0) ) {
-            return false;    //false if row or col are negative
+            return false;
         }
         if((gridX >= BOARDSIZE_X) || (gridY >= BOARDSIZE_Y)) {
             return false;
         }
         return true;
+    }
+
+    public void changeCellStatusByMouse(int coordinatX, int coordinatY){
+
+        if (coordinatX >= 0 && coordinatX < BOARDSIZE_X && coordinatY >= 0 && coordinatY < BOARDSIZE_Y){
+            if (gameBoard[coordinatX][coordinatY].isAlive()) {
+                gameBoard[coordinatX][coordinatY].setAlive(false);
+            }
+                else{
+                    gameBoard[coordinatX][coordinatY].setAlive(true);
+            }
+        }
     }
 }

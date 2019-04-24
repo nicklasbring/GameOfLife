@@ -8,12 +8,14 @@ public class Cell {
 
     //Default constructor for default Cell
     public Cell() {
+
         livingNeighbours = 0;
         alive = false;
     }
 
     //Method that Updates Cells to be alive or dead
     public void update(){
+
             if (!alive && livingNeighbours == 3){
                 alive = true;
             }

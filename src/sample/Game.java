@@ -22,7 +22,7 @@ public class Game {
         for (int i = 0; i < BOARDSIZE_X; i++) {
             for (int j = 0; j < BOARDSIZE_Y; j++) {
 
-                int temp = (int) (Math.random() * 1.5);
+                int temp = (int) (Math.random() * 1.1);
 
                 if (temp == 0) {
                     gameBoard[i][j].setAlive(false);
